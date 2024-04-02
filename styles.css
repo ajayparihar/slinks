@@ -1,0 +1,89 @@
+/* Author: Ajay Singh */
+/* Version: 1.0 */
+/* Date: 23-12-2023 */
+
+body {
+    /* Body styles */
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1 {
+    /* Heading styles */
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    font-size: 52px;
+    font-family: 'Courier New', monospace;
+    margin-top: 0;
+}
+
+#searchInput {
+    /* Search input styles */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    outline: none;
+}
+
+#links {
+    /* Flexbox styles for side-by-side layout */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.link {
+    /* Link styles */
+    flex-basis: calc(25% - 10px);
+    /* Adjust the width as needed */
+    box-sizing: border-box;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Center the text */
+}
+
+.toast {
+    /* Toast notification styles */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.highlight {
+    /* Highlighted text styles */
+    background-color: #0026ff;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .link {
+        flex-basis: calc(33.33% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        flex-basis: 100%;
+    }
+}
