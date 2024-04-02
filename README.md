@@ -1,1 +1,1 @@
-https://ajayparihar.github.io/Links/
+https://ajayparihar.github.io/slinks
