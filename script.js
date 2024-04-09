@@ -4,7 +4,7 @@
 
 async function loadLinks() {
     // Fetching data from Google sheet (publish as csv)
-    const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSbVqOy2smBdsFtcJ4zUiPSETZW3cFeGEnEu0jjk9XCW4ifrFT3g33x-1czdXzaOVMq1IgdGjDwXIwx/pub?gid=0&single=true&output=csv');
+    const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vRE_4dbNoeC2BP40j-OC3ctbP-VTr93HnCcQfmq4Ik9HzYdkiJHu3i0X8tht4-2xrW6clH97cbG6cFe/pub?output=csv');
     const dataBuffer = await response.arrayBuffer();
     const workbook = XLSX.read(dataBuffer, { type: 'array' });
 
